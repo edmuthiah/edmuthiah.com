@@ -20,7 +20,7 @@ module.exports = {
       },
       colors: {
         'background-color': '#1F2023',
-        'primary-color': '#1e90ff',
+        'primary-color': '#6666ff',
         'primary-color-dark': '#FFFF66',
         'spotify-green': '#1DB954',
         primary: colors.teal,
@@ -35,7 +35,6 @@ module.exports = {
               '&:hover': {
                 color: theme('colors.blue.500'),
               },
-              // code: { color: theme('colors.primary.400') },
             },
             h1: {
               fontWeight: '700',
@@ -58,18 +57,18 @@ module.exports = {
               backgroundColor: theme('colors.gray.800'),
             },
             code: {
-              color: theme('colors.gray.500'),
-              backgroundColor: theme('colors.gray.100'),
+              color: theme('colors.green.500'),
+              backgroundColor: theme('colors.green.100'),
               paddingLeft: '4px',
               paddingRight: '4px',
               paddingTop: '2px',
               paddingBottom: '2px',
               borderRadius: '0.25rem',
             },
-            'code:before': {
+            'code::before': {
               content: 'none',
             },
-            'code:after': {
+            'code::after': {
               content: 'none',
             },
             details: {

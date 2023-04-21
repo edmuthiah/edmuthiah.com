@@ -5,7 +5,6 @@ import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
-import NowPlaying from './NowPlaying'
 import Typewriter from 'typewriter-effect'
 import { useRouter } from 'next/router'
 
@@ -17,7 +16,7 @@ const LayoutWrapper = ({ children }) => {
       <div className="flex flex-col justify-between h-screen">
         <header className="flex items-center justify-between py-6">
           <div>
-            <Link href="/" aria-label="Einar Gudni's website">
+            <Link href="/" aria-label="Ed Muthiah's website">
               <div className="flex items-center justify-between text-xl font-semibold text-primary-color dark:text-primary-color-dark">
                 {`~${router.asPath}`}{' '}
                 <Typewriter
@@ -47,7 +46,6 @@ const LayoutWrapper = ({ children }) => {
           </div>
         </header>
         <main className="relative mb-auto">{children}</main>
-        <NowPlaying />
         <Footer />
       </div>
     </SectionContainer>

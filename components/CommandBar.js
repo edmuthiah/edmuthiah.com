@@ -29,7 +29,7 @@ export default function CommandBar(props) {
       shortcut: ['e'],
       keywords: 'send-email',
       section: 'General',
-      perform: () => window.open('mailto:einargudnig@gmail.com', '_blank'),
+      perform: () => window.open('mailto:edmuthiah@gmail.com', '_blank'),
       icon: <i className="ri-mail-line" style={iconStyle} />,
     },
     {
@@ -38,7 +38,7 @@ export default function CommandBar(props) {
       shortcut: ['s'],
       keywords: 'view-source',
       section: 'General',
-      perform: () => window.open('https://github.com/einargudnig/einargudni.com', '_blank'),
+      perform: () => window.open('https://github.com/edmuthiah/edmuthiah.com', '_blank'),
       icon: <i className="ri-braces-line" style={iconStyle} />,
     },
     {
@@ -68,15 +68,15 @@ export default function CommandBar(props) {
       perform: () => router.push('/blog'),
       icon: <i className="ri-ball-pen-line" style={iconStyle} />,
     },
-    {
-      id: 'projects',
-      name: 'Projects',
-      shortcut: ['g', 'p'],
-      keywords: 'go-projects',
-      section: 'Go To',
-      perform: () => router.push('/projects'),
-      icon: <i className="ri-lightbulb-line" style={iconStyle} />,
-    },
+    // {
+    //   id: 'projects',
+    //   name: 'Projects',
+    //   shortcut: ['g', 'p'],
+    //   keywords: 'go-projects',
+    //   section: 'Go To',
+    //   perform: () => router.push('/projects'),
+    //   icon: <i className="ri-lightbulb-line" style={iconStyle} />,
+    // },
     // {
     //   id: 'reminder',
     //   name: 'Reminder',
@@ -92,7 +92,7 @@ export default function CommandBar(props) {
       shortcut: ['g'],
       keywords: 'go-github',
       section: 'Follow',
-      perform: () => window.open('https://github.com/einargudnig', '_blank'),
+      perform: () => window.open('https://github.com/edmuthiah', '_blank'),
       icon: <i className="ri-github-line" style={iconStyle} />,
     },
     {
@@ -101,7 +101,7 @@ export default function CommandBar(props) {
       shortcut: ['l'],
       keywords: 'go-linkedin',
       section: 'Follow',
-      perform: () => window.open('https://linkedin.com/in/einargudni', '_blank'),
+      perform: () => window.open('https://linkedin.com/in/edmuthiah', '_blank'),
       icon: <i className="ri-linkedin-line" style={iconStyle} />,
     },
   ]

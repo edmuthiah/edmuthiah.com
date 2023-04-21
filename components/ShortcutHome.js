@@ -18,21 +18,23 @@ export default function ShortcutHome() {
     } else if (isMac) {
       return (
         <button onClick={query.toggle}>
-          <span className="text-lg">Press</span>{' '}
-          <span className="p-1 text-lg text-gray-900 bg-gray-300 rounded-md">⌘</span>{' '}
+          <span className="text-lg">At any time press</span>{' '}
+          <span className="px-2 py-1 p-1 text-lg text-gray-900 bg-gray-300 rounded-md">⌘</span>{' '}
           <span className="text-lg">+ </span>
           <span className="p-1 text-lg text-gray-900 bg-gray-300 rounded-md">K</span>{' '}
-          <span className="text-lg">to start →</span>
+          <span className="text-lg">for shortcuts</span>
         </button>
       )
     } else {
       return (
-        <button className="p-1 rounded-md" onClick={query.toggle}>
-          <span className="text-lg">Press</span>{' '}
-          <span className="text-gray-900 bg-gray-300 rounded-md  text-lgp-1">ctrl</span>{' '}
+        <button className="px-2 py-1 p-1 rounded-md" onClick={query.toggle}>
+          <span className="text-lg">At any time press</span>{' '}
+          <span className="px-2 py-1 p-1 text-gray-900 bg-gray-300 rounded-md  text-lgp-1">
+            ctrl
+          </span>{' '}
           <span className="text-lg">+ </span>
           <span className="p-1 text-lg text-gray-900 bg-gray-300 rounded-md">K</span>{' '}
-          <span className="text-lg">to start →</span>
+          <span className="text-lg">for shortcuts</span>
         </button>
       )
     }

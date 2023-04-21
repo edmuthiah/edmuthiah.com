@@ -2,8 +2,6 @@ import SocialIcon from '@/components/social-icons'
 import Image from '@/components/Image'
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
-import Experience from '@/components/Experience'
-import experienceData from '@/data/experienceData'
 import { RoughNotation } from 'react-rough-notation'
 
 export default function AuthorLayout({ children, frontMatter }) {
@@ -46,46 +44,26 @@ export default function AuthorLayout({ children, frontMatter }) {
           {/* <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">{children}</div> */}
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
             <p>{text1}</p>
-            <span>Are you interested in what I'm doing </span>
-            <Link
-              href={'/now'}
-              className="special-underline hover:dark:text-gray-800 dark:text-gray-100 no-underline"
-            >
-              now{' '}
-            </Link>
-            <br />
+            <span>
+              I'm a Machine Learning Engineer based in Melbourne, Australia who helps enterprises
+              transition proof of concept machine learning projects into production systems. I've
+              worked on projects in aerospace, defence, autonomous systems, financial services,
+              transport, and construction. My undergrad (Engineering) and postgrad (ML/CV) were at
+              the Australian National University. I enjoy playing tennis, failing at pottery, eating
+              fried chicken and drinking a lot of choccy milk.
+            </span>
             <p>
-              <RoughNotation
-                type="bracket"
-                brackets={['left', 'right']}
-                show={true}
-                color="#FF0000"
-              >
-                {text2}
+              I'm passionate about what I do and optimistic about the future. If you are the same,
+              then feel free to{' '}
+              <RoughNotation type="highlight" show={true} color="#FFFF66" animationDelay={1200}>
+                <a href="https://www.linkedin.com/in/edmuthiah">
+                  <span className="dark:text-gray-700">connect with me on Linkedin</span>
+                </a>
               </RoughNotation>
-            </p>
-            <br />
-            <p>
-              {text3} <br />
-              <Link
-                href={'/uses'}
-                className="special-underline no-underline hover:dark:text-gray-800 dark:text-gray-100"
-              >
-                Here{' '}
-              </Link>
-              you can see what I use on daily basis.
-            </p>
-            <br />
-            <p>
-              Feel free to reach out if you have anything to talk about, you can reach me on{' '}
-              <RoughNotation type="highlight" show={true} color="#FBCFE8" animationDelay={1200}>
-                <span className="dark:text-gray-700">einargudnig@gmail.com </span>
-              </RoughNotation>
-              or on social media.
             </p>
           </div>
         </div>
-        <div className="mt-10">
+        {/* <div className="mt-10">
           <div className="pt-6 pb-8 space-y-2 md:space-y-5">
             <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
               Experience
@@ -106,7 +84,7 @@ export default function AuthorLayout({ children, frontMatter }) {
               />
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   )
